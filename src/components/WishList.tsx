@@ -43,7 +43,7 @@ export default function WishList() {
         >
           <div className="flex justify-between items-start gap-4">
             <div className="flex-1">
-              <p className="text-xs text-amber-400 tracking-widest uppercase opacity-70 mb-1">{wish.category}</p>
+              <p className="text-xs text-rose-400 tracking-widest uppercase opacity-70 mb-1">{wish.category}</p>
               <p className={`font-serif text-xl ${wish.done ? 'line-through text-gray-600' : 'text-white'}`}>
                 {wish.name}
               </p>
@@ -55,7 +55,7 @@ export default function WishList() {
               )}
             </div>
             <div className="flex flex-col gap-2">
-              <button onClick={() => toggleDone(wish)} className="text-gray-500 hover:text-amber-400 transition">
+              <button onClick={() => toggleDone(wish)} className="text-gray-500 hover:text-rose-400 transition">
                 {wish.done ? <CheckCircle size={16} /> : <Circle size={16} />}
               </button>
               <button onClick={() => deleteWish(wish.id!)} className="text-gray-600 hover:text-red-400 transition">

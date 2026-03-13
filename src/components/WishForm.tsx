@@ -21,14 +21,14 @@ export default function WishForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="bg-[#111] border border-[#2a2a2a] rounded p-6 mb-6">
-      <h2 className="text-xs tracking-widest text-amber-400 uppercase mb-4">✦ Thêm món quà mới</h2>
+      <h2 className="text-xs tracking-widest text-rose-400 uppercase mb-4">✦ Thêm món quà mới</h2>
 
       <div className="mb-4">
         <label className="text-xs text-gray-500 uppercase tracking-widest block mb-1">Tên quà tặng</label>
         <input
           {...register('name', { required: 'Nhập tên quà nhé em ♥' })}
           placeholder="Em muốn gì nào..."
-          className="w-full bg-[#191919] border border-[#2a2a2a] rounded px-3 py-2 text-sm text-white focus:border-amber-400 outline-none"
+          className="w-full bg-[#191919] border border-[#2a2a2a] rounded px-3 py-2 text-sm text-white focus:border-rose-400 outline-none"
         />
         {errors.name && <p className="text-red-400 text-xs mt-1">{errors.name.message}</p>}
       </div>
@@ -72,7 +72,7 @@ export default function WishForm() {
 
       <button
         type="submit"
-        className="w-full bg-amber-400 text-black py-2 rounded text-xs font-medium tracking-widest uppercase hover:bg-amber-300 transition flex items-center justify-center gap-2"
+        className="w-full bg-rose-400 text-black py-2 rounded text-xs font-medium tracking-widest uppercase hover:bg-rose-300 transition flex items-center justify-center gap-2"
       >
         <PlusCircle size={14} />
         Thêm vào danh sách
