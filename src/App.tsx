@@ -27,7 +27,7 @@ export default function App() {
           <WishForm />
           <WishList />
 
-          <footer className="text-center text-xs text-gray-600 mt-12 tracking-widest">
+          <footer className="text-center text-xs text-rose-400 mt-12 tracking-widest">
              Chỉ dành riêng cho vợ Bê
           </footer>
 
